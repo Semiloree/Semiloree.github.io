@@ -1,18 +1,3 @@
-// Tidio chat: hide Tidio's default floating bubble and drive it from our own
-// styled "Chat with me" button instead.
-document.addEventListener("tidioChat-ready", function () {
-  window.tidioChatApi.hide();
-});
-
-document.getElementById('chat-btn').addEventListener('click', function() {
-  if (window.tidioChatApi) {
-    window.tidioChatApi.show();
-    window.tidioChatApi.open();
-  }
-});
-
-
-
 // JavaScript for toggling the mobile navigation menu
 document.getElementById('hamburger').addEventListener('click', function() {
     const mobileNav = document.getElementById('mobile-nav');
